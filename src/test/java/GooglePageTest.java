@@ -16,7 +16,6 @@ public class GooglePageTest {
 
         WebDriver driver = new ChromeDriver(options);
 
-        //driver.manage().window().maximize();
         Dimension windowSize = new Dimension(1920, 1080);
         driver.manage().window().setSize(windowSize);
 
@@ -25,7 +24,7 @@ public class GooglePageTest {
 
         driver.get("https://www.google.com");
 
-        //driver.quit();
+        driver.quit();
 
 
     }
